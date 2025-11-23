@@ -7,4 +7,5 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - uses: actions/checkout@v2
-    - run: curl ntfy.sh -d "Hello from GitHub actions workflow"
+    - name: Send message
+      run: curl ntfy.sh -d "Hello from GitHub actions workflow"
