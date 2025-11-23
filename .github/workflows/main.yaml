@@ -15,6 +15,5 @@ jobs:
           cache: 'maven'
 
     - name: Send message
-      run: curl ntfy.sh -d "Running Java tests now"
-      run: mvn spring-boot:run
+      run: curl ntfy.sh -d Running Java tests now && mvn spring-boot:run
       
