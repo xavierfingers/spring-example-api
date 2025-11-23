@@ -4,4 +4,4 @@ on:
    - cron: "0 1 * * "
 jobs:
    steps:
-    - run: curl ntfy.sh -d "Hello🤩 from GitHub actions workflow
+    - run: curl ntfy.sh -d "Hello from GitHub actions workflow"
