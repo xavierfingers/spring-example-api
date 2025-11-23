@@ -15,5 +15,5 @@ jobs:
           cache: 'maven'
 
     - name: Spring Boot CI/CD
-      run: mvn spring-boot:run
+      run: mvn package clean && git add . && git commit -m "Added JAr" && git push
       
