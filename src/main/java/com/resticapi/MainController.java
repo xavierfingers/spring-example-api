@@ -7,7 +7,7 @@ import java.awt.Frame;
 public class MainController {
   @GetMapping("/")
    public String msg() {
-     new Frame();
+     return "<em>Hello Spring</em>";
   }
    @GetMapping("/skibidi")
     public String skibidi() {
